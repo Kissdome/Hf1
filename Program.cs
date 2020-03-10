@@ -9,7 +9,7 @@ namespace HF_1
         {
             Console.WriteLine(Feladat4());
             Console.ReadKey();
-            Console.WriteLine("Na most tuti jó lesz");
+            Console.WriteLine("Még egy utolsó próba");
         }
 
         private static int Feladat1()
