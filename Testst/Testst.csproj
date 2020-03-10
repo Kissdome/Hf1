@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hf1\HF_1.csproj" />
     <ProjectReference Include="..\HF_1.csproj" />
   </ItemGroup>
 

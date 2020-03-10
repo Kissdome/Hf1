@@ -9,6 +9,7 @@ namespace HF_1
         {
             Console.WriteLine(Feladat3());
             Console.ReadKey();
+            Console.WriteLine("Hello World");
         }
 
         private static int Feladat1()
@@ -87,5 +88,6 @@ namespace HF_1
             //var price2 = Shop.GetPrice("AABk112554");  // 40, mert már elhasználták a kupont
 
         }
+       
     }
 }
