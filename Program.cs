@@ -7,7 +7,7 @@ namespace HF_1
         static Shop Shop = new Shop();
         static void Main(string[] args)
         {
-            Console.WriteLine(Feladat3());
+            Console.WriteLine(Feladat4());
             Console.ReadKey();
             Console.WriteLine("Hello World");
         }
