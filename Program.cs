@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace HF_1
 {
@@ -9,7 +9,7 @@ namespace HF_1
         {
             Console.WriteLine(Feladat4());
             Console.ReadKey();
-            Console.WriteLine("Remélem működsz geci");
+            Console.WriteLine("Működj már");
         }
 
         private static int Feladat1()
