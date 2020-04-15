@@ -34,10 +34,17 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: AzureRmWebAppDeployment@4
+- task: ArchiveFiles@2
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure for Students (b09fe93a-a5b8-440a-a293-5d8e81a47281)'
-    appType: 'webApp'
-    WebAppName: 'CIDC'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/_Kissdome_Hf1'
+    rootFolderOrFile: '$(Kissdome/Hf1)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
