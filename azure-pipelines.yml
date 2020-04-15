@@ -40,4 +40,4 @@ steps:
     azureSubscription: 'Azure for Students (b09fe93a-a5b8-440a-a293-5d8e81a47281)'
     appType: 'webApp'
     WebAppName: 'CIDC'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: $(System.DefaultWorkingDirectory)/_Kissdome_Hf1
